@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="gallery1.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <title>Hostel Management</title>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="file:///D:/WT%20proj/codeup1.html">Home</a></li>
+                    <li><a class="active" href="file:///D:/WT%20proj/gallery.html">Gallery</a></li>
+                    <li><a href="file:///D:/WT%20proj/roombooking.html">roombooking</a></li>
+                    <li><a  href="file:///D:/WT%20proj/ivstay.html">Ivstay</a></li>
+                    <li><a href="file:///D:/WT%20proj/menus1.html">foodmenus</a></li>
+                    <li><a href="file:///D:/WT%20proj/contact.html">contact us</a></li>
+                    <li><a href="file:///D:/WT%20proj/query.html">queries</a></li>
+                    <li><a href="file:///D:/WT%20proj/Home1.html">Logout</a></li>
+                </ul>
+            </div>
+        <div class="full-img" id="fullImgBox">
+            <img src="cam.jpg" id="fullImg">
+            <span onclick="closeFullImg()">x</span>
+        </div>
+        <div class="img-gallery">
+            
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/dheeran.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Dheeran Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/ponnar.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Ponnar Hostel</figcaption>
+                </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/sankar.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Sankar Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/kaveri.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Kaveri Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/valluvar.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Valluvar Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/ilango.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Ilango Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/amaravathi.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Amaravathi Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/bharathi.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Bharathi Hostel</figcaption>
+            </figure>
+            <figure><img src="https://www.kongu.ac.in/facilities/accommodation/bhavani.jpg" onclick="openFullImg(this.src)">
+                <figcaption>Bhavani Hostel</figcaption>
+            </figure>
+        </div>
+        <script>
+            var fullImgBox=document.getElementById("fullImgBox");
+            var fullImg=document.getElementById("fullImg");
+
+            function openFullImg(pic){
+                fullImgBox.style.display="flex";
+                fullImg.src= pic;
+            }
+
+            function closeFullImg(){
+                fullImgBox.style.display="none";
+            }
+        </script>
+    </body>
+</html>
